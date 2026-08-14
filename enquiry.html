@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Subscribe to LocalHarvest Boxes. Submit your subscription enquiry for fresh local produce delivered weekly in Johannesburg.">
+  <title>Subscribe | LocalHarvest Boxes</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🌿</span>
+        <span class="logo-text">LocalHarvest <strong>Boxes</strong></span>
+      </a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Boxes</a></li>
+          <li><a href="enquiry.html" class="active">Subscribe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <a href="enquiry.html" class="btn btn-primary header-cta">Subscribe</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <h1>Subscribe to LocalHarvest</h1>
+        <p>Fill in the form below and we’ll get back to you within 24 hours to confirm your first delivery.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container form-layout">
+        <div class="form-intro">
+          <h2>Start Your Subscription</h2>
+          <p>Tell us a little about yourself and your preferred box. No payment is required at this stage — we’ll contact you to finalise details.</p>
+          <ul class="form-benefits">
+            <li>Flexible weekly or bi-weekly delivery</li>
+            <li>Cancel or pause anytime</li>
+            <li>Support local Gauteng farmers</li>
+            <li>Plastic-free packaging where possible</li>
+          </ul>
+        </div>
+
+        <form id="subscribe-form" class="enquiry-form" novalidate>
+          <div class="form-group">
+            <label for="fullName">Full Name <span class="required">*</span></label>
+            <input type="text" id="fullName" name="fullName" required placeholder="e.g. Thandi Molefe" autocomplete="name">
+            <span class="error-message" id="fullName-error"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">Email Address <span class="required">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" autocomplete="email">
+              <span class="error-message" id="email-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="required">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="082 123 4567" autocomplete="tel">
+              <span class="error-message" id="phone-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="suburb">Suburb <span class="required">*</span></label>
+            <input type="text" id="suburb" name="suburb" required placeholder="e.g. Sandton, Fourways, Midrand" autocomplete="address-level2">
+            <span class="error-message" id="suburb-error"></span>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="boxSize">Preferred Box Size <span class="required">*</span></label>
+              <select id="boxSize" name="boxSize" required>
+                <option value="">Select a size</option>
+                <option value="small">Small — R280 (1–2 people)</option>
+                <option value="medium">Medium — R420 (2–4 people)</option>
+                <option value="large">Large — R580 (4–6 people)</option>
+              </select>
+              <span class="error-message" id="boxSize-error"></span>
+            </div>
+            <div class="form-group">
+              <label for="frequency">Delivery Frequency <span class="required">*</span></label>
+              <select id="frequency" name="frequency" required>
+                <option value="">Select frequency</option>
+                <option value="weekly">Weekly</option>
+                <option value="biweekly">Bi-weekly</option>
+              </select>
+              <span class="error-message" id="frequency-error"></span>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="dietary">Dietary Notes / Preferences (optional)</label>
+            <textarea id="dietary" name="dietary" rows="4" placeholder="e.g. No onions, prefer more leafy greens, allergy to nuts..."></textarea>
+          </div>
+
+          <div class="form-group form-check">
+            <input type="checkbox" id="consent" name="consent" required>
+            <label for="consent">I agree to be contacted about my subscription enquiry. <span class="required">*</span></label>
+            <span class="error-message" id="consent-error"></span>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-lg btn-block">Submit Enquiry</button>
+          <p class="form-note">We’ll reply within one business day. No spam, ever.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo">
+          <span class="logo-icon">🌿</span>
+          <span class="logo-text">LocalHarvest <strong>Boxes</strong></span>
+        </a>
+        <p>Fresh, local produce delivered weekly across Johannesburg.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Our Boxes</a></li>
+          <li><a href="enquiry.html">Subscribe</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-contact">
+        <h4>Get in Touch</h4>
+        <ul>
+          <li><a href="mailto:hello@localharvestboxes.co.za">hello@localharvestboxes.co.za</a></li>
+          <li><a href="https://wa.me/27821234567" target="_blank" rel="noopener">WhatsApp us</a></li>
+          <li><a href="https://instagram.com/localharvestboxes" target="_blank" rel="noopener">@localharvestboxes</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <p>&copy; 2026 LocalHarvest Boxes. All rights reserved. | Student Project — WEDE5021</p>
+      </div>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/27821234567" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32" width="28" height="28" fill="currentColor" aria-hidden="true">
+      <path d="M16.004 0C7.164 0 0 7.163 0 15.997c0 2.82.736 5.58 2.136 8.007L.07 31.93l8.13-2.13A15.95 15.95 0 0016.004 32C24.84 32 32 24.836 32 15.997 32 7.163 24.84 0 16.004 0zm0 29.24a13.21 13.21 0 01-6.73-1.84l-.48-.287-5.02 1.316 1.34-4.89-.313-.502a13.2 13.2 0 01-2.02-7.04c0-7.3 5.94-13.24 13.24-13.24 7.3 0 13.24 5.94 13.24 13.24 0 7.3-5.94 13.24-13.24 13.24zm7.26-9.9c-.4-.2-2.36-1.16-2.73-1.29-.37-.13-.63-.2-.9.2-.26.4-1.02 1.29-1.25 1.55-.23.27-.46.3-.86.1-.4-.2-1.68-.62-3.2-1.97-1.18-1.05-1.98-2.35-2.21-2.75-.23-.4-.02-.62.17-.82.18-.18.4-.46.6-.7.2-.23.26-.4.4-.66.13-.27.07-.5-.03-.7-.1-.2-.9-2.16-1.23-2.96-.32-.77-.65-.67-.9-.68h-.77c-.26 0-.7.1-1.06.5-.37.4-1.4 1.36-1.4 3.32 0 1.96 1.43 3.85 1.63 4.12.2.27 2.82 4.3 6.83 6.03 4.01 1.73 4.01 1.15 4.73 1.08.72-.07 2.36-.96 2.7-1.9.33-.93.33-1.73.23-1.9-.1-.16-.36-.27-.76-.46z"/>
+    </svg>
+  </a>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
